@@ -135,6 +135,9 @@ responsive
 
 @media screen and (max-width: 834px){
     /*recipe*/
+    .recipe-text h1{
+        font-size: 1.6rem;
+    }
     #recipe{
        flex-direction: column;
     }
