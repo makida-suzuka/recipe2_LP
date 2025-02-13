@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+main{
+    width: 100%;
+}
+/*-----------------------------------
+recipe
+-------------------------------------*/
+#recipe{
+    display: flex;
+    justify-content: space-between;
+}
+.recipe-img{
+    width: 50%;
+}
+.recipe-img img{
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+} 
+.recipe-text{
+    padding: 40px 5% 0 5%;
+    width: 50%;
+    box-sizing: border-box;
+}
+.recipe-text h1{
+    margin: 0;
+    font-size: 1.7rem;
+}
+.title{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    border-bottom: solid #ccc 1px;
+}
+.comment{
+    margin-bottom: 20px;
+}
+
+dl{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+dt {
+    width: 70%;
+    padding: 5px 0;
+    border-bottom: dotted #ccc 1px;
+}
+dd {
+    text-align: end;
+    width: 30%;
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: dotted #ccc 1px;
+}
+
+ol.process{
+    padding-left: 20px;
+    
+}
+.process li{
+    padding: 5px 0;
+    border-bottom: dotted #ccc 1px;
+}
+
+/*---------------------------------
+button
+------------------------------------*/
+#button{
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#button a{
+    font-size: 0.8rem;
+    display: inline-block;
+    padding: 18px 60px;
+    border: solid #000 1px ;
+    transition:all 0.5s 0s ease;
+}
+#button a:hover{
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+/*---------------------------------
+footer
+------------------------------------*/
+#footer{
+    text-align: center;
+}
+.sns{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.sns li{
+    list-style: none;
+    font-size: 0.8rem;
+    border-bottom: solid #000 1px;
+}
+.sns li:nth-child(2){
+    margin: 0 20px;
+}
+
+.copyright{
+    font-size: 0.7rem;
+}
+
+
+/*------------------------------------------------------
+responsive
+-------------------------------------------------------*/
+
+@media screen and (max-width: 834px){
+    /*recipe*/
+    #recipe{
+       flex-direction: column;
+    }
+    .recipe-img{
+        width: 100%;
+    }
+    .recipe-img img{
+        height: auto;
+    }
+    .recipe-text{
+        width: 100%;
+    }
+
+}
